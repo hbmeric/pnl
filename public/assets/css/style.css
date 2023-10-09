@@ -1,0 +1,342 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color:  #fec93b;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 3px solid #444;
+    & .kap {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+}
+#logo img {
+    border:none;
+    width: 200px;
+}
+.kap {
+    width: 100%;
+    max-width: 990px;
+}
+#header-tel {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000, 
+               3px 3px 5px blue; 
+
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    background-color: #666;
+    border-bottom: 3px solid #444;
+    padding: 10px;
+
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin:0;
+    padding: 0;
+    max-width: 990px;
+    justify-content: center;
+    align-content: center;
+    gap:20px;
+    & li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    & li a:hover {
+        text-shadow: 1px 1px 1px orangered, 
+               3px 3px 5px #fec93b; 
+    }
+}
+#banner {
+    width: 100%;
+    height: 200px;
+   
+    & #banner-container {
+        height: 200px;
+        width: 100%;
+        
+       
+        & img {
+            width: 100%;
+            border:none;
+            height: 200px;
+        
+        }
+    }
+   
+    
+
+}
+
+section {
+    flex:1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: start;
+    padding: 20px;
+}
+footer {
+    
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    border-top: 3px solid #444;
+    background-color: #fec93b;
+    color: white;
+    font-size: 12px;
+
+
+}
+.basari-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 2px;
+    border:1px solid #000
+}
+.basaran-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    align-content: center;
+    justify-content: center;
+
+    & span {
+        font-weight:bold;
+    }
+    box-shadow:2px 2px 10px 6px #fec93b;
+}
+
+.basaran-row {
+    margin: 20px;
+}
+.kim-kazandi {
+    margin-top: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 2px #fec93b; 
+}
+h2 {
+    text-align: center;
+}
+.text-yellow {
+    color: #fec93b;
+    text-shadow: 1px 1px 1px black;
+}
+.ogretmen-photo {
+    width: 200px;
+    height: 200px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+.ogretmen-detay, .hizmet-link {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #666;
+
+}
+.ogretmen-detay:hover , .hizmet-link:hover {
+    color: #000;
+    font-weight: bold;
+
+}
+.ogretmen-card:hover,.hizmet-card:hover {
+    border-color: #000;
+    & img {
+        border-color: #000;
+        
+    }
+    & .ogretmen-name {
+        font-weight: bold;
+    }
+    box-shadow:2px 2px 10px 6px #ccc;
+}
+.ogretmen-name {
+    font-weight: 500;
+    text-align: center;
+}
+.ogretmen-brans {
+    text-align: center;
+}
+.hizmet-photo {
+    width: 99%;
+    padding: 2px;
+    box-sizing: border-box;
+    border:1px solid #ccc
+
+}
+.slide {
+    width: 100%;
+    height: auto;
+    position: relative;
+    & .slide-inner {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+.arayalim-kap {
+    border:1px solid #fec93b;
+    border-radius: 10px;
+    padding: 15px;
+    padding-top: 50px;
+    margin-top:55px;
+    height: 400px;
+    text-align: center;
+    & .form-group {
+        margin: 15px auto;
+    }
+   
+
+}
+.ara-not {
+    text-align: left;
+    font-size: 11px;
+}
+#slogan {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    margin: 40px auto;
+    color:darkred;
+}
+.banka {
+    padding: 10px;
+    border: 1px solid #fec93b;
+    border-radius: 10px;
+    margin: 10px;
+}
+.iletisim-baslik {
+    font-weight: bold;
+    display: inline-block;
+    width: 150px;
+}
+#basaran {
+    display: flex;
+    align-content: space-around;
+    gap: 25px;
+    &>div {
+        width: 30%;
+    }
+    & img {
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+    }
+    flex-wrap: wrap;
+}
+#headernav {
+    display: none;
+}
+#galeri {
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px
+}
+.galeri {
+    display: block;
+    width: 300px;
+    height: auto;
+    padding: 2px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    & img {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+@media (max-width:800px) {
+    body {
+        overflow-x: hidden;
+    }
+    #header-tel {
+        display: none;
+    }
+    nav {
+        display: block;
+        width: 70%;
+        height: 100%;
+        border-bottom: none;
+        border-top:none;
+        border-right: 1px solid #000;
+        position: absolute;
+        z-index: 100;
+        transform: translateX(-100%);
+        transition: .5s ease;
+        opacity: 0;
+        & ul {
+            display: block;
+        }
+        & li {
+            display: block;
+        }
+        & a {
+            display: block;
+            box-sizing: border-box;
+            padding: 10px;
+            border-bottom: 1px solid #000;
+        }
+    }
+    #logo img {
+        width:60%;
+    }
+    #headernav {
+        display: block;
+        font-size: 36px;
+        font-weight: bold;
+        color: white;
+        border:1px solid white;
+        border-radius: 5px;
+        background-color: #d9a618;
+    
+    }
+    .nav-aktif {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #basaranlar img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+}
+
